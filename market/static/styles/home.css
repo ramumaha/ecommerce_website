@@ -1,6 +1,6 @@
 table, td, th {  
     border: 1px solid #ddd;
-    text-align: lefts;
+    text-align: left;
   }
   
   table {
@@ -41,6 +41,7 @@ li a:hover{
 body{
     background-color: #212121;
     color: white;
+    text-align: center;
 }
 
 .btn-success{
@@ -52,4 +53,9 @@ body{
 .btn-info{
     background-color: blue;
     color: white;
+}
+
+.btn_submit{
+    background-color: blue;
+    color:white
 }
