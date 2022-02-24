@@ -25,7 +25,7 @@
                     <a href="{{url_for('market_page') }}">Market</a>
                 </li>
                 <li>
-                    <a href="#">Login</a>
+                    <a href="{{url_for('login_page') }}">Login</a>
                 </li>
                 <li>
                     <a href="{{url_for('register_page') }}">Register</a>
@@ -33,6 +33,17 @@
         </ul>
         </div>
       </nav>
+      {% with messages=get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category,message in messages%}
+                <div class="alert--{{ category }}">
+                    {{message}}
+                </div>
+
+
+                {% endfor %}
+            {% endif %}
+      {% endwith %}
       {% block content %}
       {% endblock %}
 </body>

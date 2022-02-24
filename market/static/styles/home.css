@@ -59,3 +59,17 @@ body{
     background-color: blue;
     color:white
 }
+
+.alert--danger{
+    color:red;
+    background-color: pink;
+}
+
+.btn_register{
+    color:White;
+}
+
+.alert--success{
+    color:white;
+    background-color: green;
+}

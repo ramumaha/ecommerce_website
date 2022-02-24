@@ -25,8 +25,17 @@ Register Page
         {{ form.password1(placeholder="Password") }}
         <br>
         {{ form.password2.label() }}
-        {{ form.password2(placeholder="Confirm the password") }}
+        {{ form.password2(placeholder="Confirm the pRegisterassword") }}
         <br>
+        <div>
+            <h6>
+                Already have an account?
+                <a class="btn_register" href="{{ url_for('login_page') }}">Log in</a>
+            </h6>
+          
+
+        </div>
+
         {{form.submit(class="btn_submit")}}
     </form>
 </div>
